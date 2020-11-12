@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>T7R Redirect</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <div id="code"></div>
+</body>
+<script type="text/javascript">
+    var queryString = new URLSearchParams(window.location.search);
+    var code = queryString.get('code');
+    console.log("code: " + code)
+    document.getElementById("code").textContent = code;
+</script>
+</html>
